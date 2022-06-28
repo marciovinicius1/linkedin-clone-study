@@ -15,18 +15,19 @@ const Feed: React.FC<Props> = ({ posts }) => {
   const [useSSRPosts, setUseSSRPosts] = useRecoilState(useSSRPostsState);
 
   useEffect(() => {
-    const fetchPost = async () => {
+    const fetchPosts = async () => {
       const response = await fetch("/api/posts", {
         method: "GET",
         headers: { "Content-Type": "application/json" },
       });
 
-      const reponseData = await response.json();
-      setRealtimePosts(reponseData);
+      const responseData = await response.json();
+      setRealtimePosts(responseData);
       setHandlePost(false);
       setUseSSRPosts(false);
     };
-    fetchPost();
+
+    fetchPosts();
   }, [handlePost]);
 
   return (

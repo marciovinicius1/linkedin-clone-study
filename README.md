@@ -1,34 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <a style="color:#F806CC;font-weight:bold" href="#Projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a style="color:#F806CC;font-weight:bold" href="#Desenvolvimento">Desenvolvimento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a style="color:#F806CC;font-weight:bold" href="#Features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a style="color:#F806CC;font-weight:bold"
+  href="#Extras">Extras</a>&nbsp;&nbsp;&nbsp;
+</p>
 
-## Getting Started
+<img alt="header" title="header" src="./github/linkedinclonegif.png"></img>
 
-First, run the development server:
+# <a id="Projeto"></a> ⚡**Projeto**
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Aplicação web clone do Linkedin (plataforma de streaming) desenvolvida com **Next.js** para fins de aprendizado.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<img alt="screenshots" title="screenshots" src="./github/thumbnail.png">
+<br>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+# <a id="Desenvolvimento"></a> ⚙️**Desenvolvimento**
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<div aling="right" min-width="400px" max-width="400px" width="400px">
+<img alt="LinkedinLogo" title="LinkedinLogo" src="./github/good-smile.gif"></div>
+</div>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<p style="text-align: left;" aling="left">
+🔸Projeto desenvolvido com a metodologia Mobile-Frist portanto é totalmente responsivo.</br>
+🔸Alem do design, foram replicadas algumas funcionalidades Login e authenticaçao de usuário, criação e deleção de posts, alternancia de
+temas dark e light.</br>
+🔸API utilizada para o conteúdo de notícias - <a href="https://newsapi.org/"><b>News API</b></a></p>
 
-## Learn More
+### **✨Linguagens**:
 
-To learn more about Next.js, take a look at the following resources:
+Typescript | HTML | CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **✨Tecnologias**:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+React(Next.js) | Tailwind CSS | MongoDB | Next API & Middlewares
 
-## Deploy on Vercel
+### **✨Principais bibliotecas**:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+RecoilJs | FramerMotion | NextAuth | Timeago-React | NextThemes | MaterialUI |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## **Testando o projeto**
+
+➡️ Para testar a aplicação acesse o <a href="https://netflix-clone-study.vercel.app/login">**_LINK_**</a> </br>
+🔺Faça autenticação com uma conta Google clicando no botão **Login**</br>
+🔺**Confira o conteúdo...**
+<br>
+
+# <a id="Features"></a>**🔥Features**:
+
+#### **✅Sistema de login e atutenticação com NextAuth**
+
+#### **✅Criação de posts e deleção de posts realizadas pelo usuário**
+
+#### **✅Interface identica a aplicação original**
+
+#### **Toggle Dark and White theme**
+
+#### **✅Widget com notícias atualizadas frequentemente**
+
+#### **✅Responsividade**
+
+<br>
+
+# <a id="Extras"></a>**🎁Extras**
+
+<img alt="gif aplication test 2" title="gif" src="./github/test1.gif">
+<img alt="gif aplication test" title="gif" src="./github/test2.gif">

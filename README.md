@@ -15,7 +15,7 @@ Aplicação web clone do Linkedin (plataforma de streaming) desenvolvida com **N
 
 # <a id="Desenvolvimento"></a> ⚙️**Desenvolvimento**
 
-<img alt="LinkedinLogo" title="LinkedinLogo" src="./.github/good-smile.gif" min-width="400px" max-width="180px" width="160px" align="right" />
+<img alt="LinkedinLogo" title="LinkedinLogo" src="./.github/good-smile.gif" min-width="160px" max-width="180px" width="160px" align="right" />
 
 <p style="text-align: left;" aling="left">🔸Projeto desenvolvido com a metodologia Mobile-Frist portanto é totalmente responsivo.</p>
 <p style="text-align: left;" aling="left">🔸Alem do design, foram replicadas algumas funcionalidades Login e authenticaçao de usuário, criação e deleção de posts, alternancia de

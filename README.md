@@ -6,26 +6,21 @@
   href="#Extras">Extras</a>&nbsp;&nbsp;&nbsp;
 </p>
 
-<img alt="header" title="header" src="./github/linkedinclonegif.png"></img>
+<img alt="header" title="header" src="./.github/header.png"></img>
 
 # <a id="Projeto"></a> ⚡**Projeto**
 
 Aplicação web clone do Linkedin (plataforma de streaming) desenvolvida com **Next.js** para fins de aprendizado.
-
-<img alt="screenshots" title="screenshots" src="./github/thumbnail.png">
 <br>
 
 # <a id="Desenvolvimento"></a> ⚙️**Desenvolvimento**
 
-<div aling="right" min-width="400px" max-width="400px" width="400px">
-<img alt="LinkedinLogo" title="LinkedinLogo" src="./github/good-smile.gif"></div>
-</div>
+<img alt="LinkedinLogo" title="LinkedinLogo" src="./.github/good-smile.gif" aling="right" min-width="400px" max-width="400px" width="400px">
 
-<p style="text-align: left;" aling="left">
-🔸Projeto desenvolvido com a metodologia Mobile-Frist portanto é totalmente responsivo.</br>
-🔸Alem do design, foram replicadas algumas funcionalidades Login e authenticaçao de usuário, criação e deleção de posts, alternancia de
-temas dark e light.</br>
-🔸API utilizada para o conteúdo de notícias - <a href="https://newsapi.org/"><b>News API</b></a></p>
+<p style="text-align: left;" aling="left">🔸Projeto desenvolvido com a metodologia Mobile-Frist portanto é totalmente responsivo.</p>
+<p style="text-align: left;" aling="left">🔸Alem do design, foram replicadas algumas funcionalidades Login e authenticaçao de usuário, criação e deleção de posts, alternancia de
+temas dark e light.</p>
+<p style="text-align: left;" aling="left">🔸API utilizada para o conteúdo de notícias - <a href="https://newsapi.org/"><b>News API</b></a></p>
 
 ### **✨Linguagens**:
 
@@ -64,5 +59,5 @@ RecoilJs | FramerMotion | NextAuth | Timeago-React | NextThemes | MaterialUI |
 
 # <a id="Extras"></a>**🎁Extras**
 
-<img alt="gif aplication test 2" title="gif" src="./github/test1.gif">
-<img alt="gif aplication test" title="gif" src="./github/test2.gif">
+<img alt="gif aplication test 2" title="gif" src="./.github/gifLinkedin.gif" aling="right" min-width="400px" max-width="400px" width="400px" />
+<img alt="gif aplication test" title="gif" src="./.github/gifLinkedin1.gif" aling="left" min-width="400px" max-width="400px" width="400px" />

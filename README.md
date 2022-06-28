@@ -15,7 +15,7 @@ Aplicação web clone do Linkedin (plataforma de streaming) desenvolvida com **N
 
 # <a id="Desenvolvimento"></a> ⚙️**Desenvolvimento**
 
-<img alt="LinkedinLogo" title="LinkedinLogo" src="./.github/good-smile.gif" aling="right" min-width="400px" max-width="400px" width="400px">
+<img alt="LinkedinLogo" title="LinkedinLogo" src="./.github/good-smile.gif" min-width="400px" max-width="180px" width="160px" align="right" />
 
 <p style="text-align: left;" aling="left">🔸Projeto desenvolvido com a metodologia Mobile-Frist portanto é totalmente responsivo.</p>
 <p style="text-align: left;" aling="left">🔸Alem do design, foram replicadas algumas funcionalidades Login e authenticaçao de usuário, criação e deleção de posts, alternancia de
@@ -36,7 +36,7 @@ RecoilJs | FramerMotion | NextAuth | Timeago-React | NextThemes | MaterialUI |
 
 ## **Testando o projeto**
 
-➡️ Para testar a aplicação acesse o <a href="https://netflix-clone-study.vercel.app/login">**_LINK_**</a> </br>
+➡️ Para testar a aplicação acesse o <a href="linkedin-clone-study.vercel.app">**_LINK_**</a> </br>
 🔺Faça autenticação com uma conta Google clicando no botão **Login**</br>
 🔺**Confira o conteúdo...**
 <br>
@@ -49,7 +49,7 @@ RecoilJs | FramerMotion | NextAuth | Timeago-React | NextThemes | MaterialUI |
 
 #### **✅Interface identica a aplicação original**
 
-#### **Toggle Dark and White theme**
+#### **✅Toggle Dark and White theme**
 
 #### **✅Widget com notícias atualizadas frequentemente**
 
@@ -59,5 +59,5 @@ RecoilJs | FramerMotion | NextAuth | Timeago-React | NextThemes | MaterialUI |
 
 # <a id="Extras"></a>**🎁Extras**
 
-<img alt="gif aplication test 2" title="gif" src="./.github/gifLinkedin.gif" aling="right" min-width="400px" max-width="400px" width="400px" />
-<img alt="gif aplication test" title="gif" src="./.github/gifLinkedin1.gif" aling="left" min-width="400px" max-width="400px" width="400px" />
+<img alt="gif aplication test 2" title="gif" src="./.github/gifLinkedin.gif"  min-width="400px" max-width="400px" width="400px" />
+<img alt="gif aplication test" title="gif" src="./.github/gifLinkedin1.gif"  min-width="400px" max-width="400px" width="400px" />

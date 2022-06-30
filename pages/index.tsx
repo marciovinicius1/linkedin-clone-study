@@ -10,7 +10,6 @@ import { AnimatePresence } from "framer-motion";
 import { useRecoilState } from "recoil";
 import { modalState, modalTypeState } from "../atoms/modalAtom";
 import Modal from "../components/Modal";
-import { connect } from "http2";
 import { connectToDatabase } from "../util/mongodb";
 import { Post } from "../types/post";
 import Widgets, { ArticleProps, ArticlesProps } from "../components/Widgets";
@@ -21,17 +20,16 @@ interface Props {
 }
 
 const Home: NextPage<Props> = ({ posts, articles }) => {
-  console.log(articles);
+  const [modalOpen, setModalOpen] = useRecoilState(modalState);
+  const [modalType, setModalType] = useRecoilState(modalTypeState);
   const router = useRouter();
   const { status } = useSession({
     required: true,
     onUnauthenticated() {
+      // The user is not authenticated, handle it here.
       router.push("/home");
     },
   });
-
-  const [modalOpen, setModalOpen] = useRecoilState(modalState);
-  const [modalType, setModalType] = useRecoilState(modalTypeState);
 
   return (
     <div className="bg-[#f3f2ef] dark:bg-black  dark:text-white h-screen overflow-y-scroll md:space-y-6">
@@ -60,7 +58,7 @@ const Home: NextPage<Props> = ({ posts, articles }) => {
 export default Home;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  // Check user Auth on server
+  // Check if the user is authenticated on the server...
   const session = await getSession(context);
   if (!session) {
     return {
@@ -79,9 +77,9 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     .sort({ timestamp: -1 })
     .toArray();
 
-  // Get Google News DB
+  // Get Google News API
   const results = await fetch(
-    `https://newsapi.org/v2/top-headlines?country=br&apiKey=${process.env.NEWS_API_KEY}`
+    `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.NEWS_API_KEY}`
   ).then((res) => res.json());
 
   return {

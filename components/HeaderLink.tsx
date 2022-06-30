@@ -1,13 +1,13 @@
-import React from "react";
-import { AvatarTypeMap, SvgIconTypeMap } from "@mui/material";
-import { OverridableComponent } from "@mui/material/OverridableComponent";
 import { signOut, useSession } from "next-auth/react";
+import React from "react";
+
+/*IconType:
+| (OverridableComponent<SvgIconTypeMap<{}, "svg">> & { muiName: string })
+| OverridableComponent<AvatarTypeMap<{}, "svg">>
+| any;*/
 
 interface Props {
-  Icon:
-    | (OverridableComponent<SvgIconTypeMap<{}, "svg">> & { muiName: string })
-    | OverridableComponent<AvatarTypeMap<{}, "svg">>
-    | any;
+  Icon: any;
   text: string;
   avatar?: boolean;
   feed?: boolean;

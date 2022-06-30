@@ -10,7 +10,6 @@ import React from "react";
 
 const Sidebar: React.FC = () => {
   const { data: session } = useSession();
-  console.log(session?.user?.image);
 
   return (
     <div className="space-y-2 min-w-max max-w-lg">

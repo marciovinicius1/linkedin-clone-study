@@ -1,18 +1,25 @@
-import type { NextPage } from "next";
-import { getSession, useSession } from "next-auth/react";
+import type { NextPage, GetServerSideProps } from "next";
 import Head from "next/head";
+import { useRouter } from "next/router";
+
+import { useSession } from "next-auth/react";
+import { authOptions } from "./api/auth/[...nextauth]";
+import { getServerSession } from "next-auth";
+
+import { connectToDatabase } from "../util/mongodb";
+
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
-import { GetServerSideProps } from "next";
-import { useRouter } from "next/router";
 import Feed from "../components/Feed";
-import { AnimatePresence } from "framer-motion";
+import Widgets, { ArticleProps } from "../components/Widgets";
+import Modal from "../components/Modal";
+
 import { useRecoilState } from "recoil";
 import { modalState, modalTypeState } from "../atoms/modalAtom";
-import Modal from "../components/Modal";
-import { connectToDatabase } from "../util/mongodb";
+
+import { AnimatePresence } from "framer-motion";
+
 import { Post } from "../types/post";
-import Widgets, { ArticleProps, ArticlesProps } from "../components/Widgets";
 
 interface Props {
   posts: Post[];
@@ -59,7 +66,7 @@ export default Home;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   // Check if the user is authenticated on the server...
-  const session = await getSession(context);
+  const session = await getServerSession(context, authOptions);
   if (!session) {
     return {
       redirect: {

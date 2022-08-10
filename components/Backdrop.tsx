@@ -1,4 +1,4 @@
-import React, { ReactChild, ReactChildren, ReactNode } from "react";
+import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 // import { Container } from './styles';
 

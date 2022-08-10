@@ -2,9 +2,8 @@ import type { NextPage, GetServerSideProps } from "next";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-import { useSession } from "next-auth/react";
 import { authOptions } from "./api/auth/[...nextauth]";
-import { getServerSession } from "next-auth";
+import { getSession, useSession } from "next-auth/react";
 
 import { connectToDatabase } from "../util/mongodb";
 
@@ -66,7 +65,7 @@ export default Home;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   // Check if the user is authenticated on the server...
-  const session = await getServerSession(context, authOptions);
+  const session = await getSession(context);
   if (!session) {
     return {
       redirect: {

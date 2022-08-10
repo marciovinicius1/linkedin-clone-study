@@ -8,7 +8,6 @@ import {
   ThumbUpOffAltRounded,
 } from "@mui/icons-material";
 import { Avatar, IconButton } from "@mui/material";
-import Email from "next-auth/providers/email";
 import { useSession } from "next-auth/react";
 import React, { useState } from "react";
 import { useRecoilState } from "recoil";

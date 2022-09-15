@@ -2,7 +2,6 @@ import type { NextPage, GetServerSideProps } from "next";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-import { authOptions } from "./api/auth/[...nextauth]";
 import { getSession, useSession } from "next-auth/react";
 
 import { connectToDatabase } from "../util/mongodb";

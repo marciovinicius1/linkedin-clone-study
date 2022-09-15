@@ -16,6 +16,7 @@ export default async function handler(
         .find()
         .sort({ ts: -1 })
         .toArray();
+      res.setHeader("Cache-Control", "public,max-age=31536000");
       res.status(200).json(posts as WithId<Document>[]);
     } catch (error: any) {
       res.status(500).json(error);

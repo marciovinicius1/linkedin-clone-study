@@ -38,9 +38,7 @@
     "typescript": "4.7.3"
   },
   "engines": {
-    "node": "16.14.2",
-    "yarn": "1.22.15",
-    "npm": "8.5.0"
+    "node": "16.14.2"
   },
   "cacheDirectories": [
     "node_modules",
